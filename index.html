@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <style>
         body {
             margin: 0;
@@ -65,20 +67,32 @@
             100% { transform: rotate(360deg); }
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 36px;
-            }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+        }
 
-            p {
-                font-size: 16px;
-            }
+        .social-icons a {
+            color: #333;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
 
-            .spinner {
-                width: 60px;
-                height: 60px;
-                border-width: 6px;
-                margin-bottom: 20px;
+        .social-icons a:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-icons a i {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
             }
         }
     </style>
@@ -89,6 +103,11 @@
             <div class="spinner"></div>
             <h1>Coming Soon</h1>
             <p>We're working hard to bring you an awesome website.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/sagar.subedi.370515"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/s__agar_/"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/ersagarsubedi"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </div>
 </body>
