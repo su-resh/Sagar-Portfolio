@@ -1,124 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            overflow: hidden;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 48px;
-            color: #333;
-            margin-bottom: 20px;
-            animation: fadeInUp 1s ease forwards;
-        }
-
-        p {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 40px;
-            animation: fadeInUp 1s ease 0.5s forwards;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 8px solid rgba(255, 51, 102, 0.1);
-            border-top: 8px solid #ff3366;
-            border-radius: 50%;
-            animation: spin 1.5s linear infinite;
-            margin: 0 auto;
-            margin-bottom: 40px;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-        }
-
-        .social-icons a {
-            color: #333;
-            font-size: 24px;
-            margin: 0 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            transform: translateY(-5px);
-        }
-
-        .social-icons a i {
-            animation: fadeIn 1s ease forwards;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sagar Subedi- Portfolio </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <div class="container">
-        <div class="content">
-            <div class="spinner"></div>
-            <h1>Coming Soon</h1>
-            <p>We're working hard to bring you an awesome website.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/sagar.subedi.370515"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/s__agar_/"><i class="fab fa-instagram"></i></a>
-                <a href="https://linkedin.com/in/ersagarsubedi"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </div>
-</body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="https://sagarsubedi.name.np/">
+            <img src="Assets/Sagar.jpeg" alt="Sagar Subedi Logo" class="img-icon">
+              
 
+            <span class="ml-3 text-xl">Sagar Subedi</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-white">Home</a>
+            <a class="mr-5 hover:text-white">About</a>
+            <a class="mr-5 hover:text-white">Skills</a>
+            <a class="mr-5 hover:text-white">Work</a>
+ 
+        </nav>
+          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contact Me
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <body>
+        <section class="text-gray-400 bg-gray-900 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Hello
+                  <br class="hidden lg:inline-block">I'm Sagar Subedi.
+                </h1>
+                <p class="mb-8 leading-relaxed">Experienced Civil Engineer specializing in hydropower and building construction projects. Dedicated to delivering high-quality results through expert project management, design, and supervision.</p>
+                <div class="flex justify-center">
+                  <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Email</button>
+                  <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+                </div>
+              </div>
+              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="Assets/Sagar Avtar.png">
+              </div>
+            </div>
+          </section>
+      </body>
+    
+      
 </html>
